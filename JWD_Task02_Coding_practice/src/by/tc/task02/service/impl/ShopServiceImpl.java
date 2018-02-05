@@ -1,14 +1,12 @@
 package by.tc.task02.service.impl;
 
-import java.util.ArrayList;
+
 import java.util.List;
 
 import by.tc.task02.dao.DAOFactory;
 import by.tc.task02.dao.ShopDAO;
 import by.tc.task02.dao.exeption.DAOExciption;
 import by.tc.task02.entity.Category;
-import by.tc.task02.entity.Client;
-import by.tc.task02.entity.RentUnit;
 import by.tc.task02.entity.SportEquipment;
 import by.tc.task02.service.ShopService;
 import by.tc.task02.service.exception.DuplicateClientNameExeption;
