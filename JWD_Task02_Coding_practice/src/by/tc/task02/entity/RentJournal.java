@@ -1,46 +1,42 @@
 package by.tc.task02.entity;
 
 import java.io.Serializable;
-import java.util.ArrayList;
 import java.util.List;
 
-public class RentUnit implements Serializable{
+public class RentJournal implements Serializable{
 	
 	private static final long serialVersionUID = 1L;
-	private List<SportEquipment> units;
+	private List<Client> clients;
 	
 	
-	public RentUnit() {
+	
+	public RentJournal() {
 		super();
-		units = new ArrayList<>();
 	}
 	
-	
-	public RentUnit(List<SportEquipment> units) {
+	public RentJournal(List<Client> clients) {
 		super();
-		this.units = units;
+		this.clients = clients;
 	}
-
-
-	public List<SportEquipment> getUnits() {
-		return units;
+	
+	
+	public List<Client> getClients() {
+		return clients;
 	}
-	public void setUnits(List<SportEquipment> units) {
-		this.units = units;
+	public void setClients(List<Client> clients) {
+		this.clients = clients;
 	}
 	public static long getSerialversionuid() {
 		return serialVersionUID;
 	}
 
-
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
-		result = prime * result + ((units == null) ? 0 : units.hashCode());
+		result = prime * result + ((clients == null) ? 0 : clients.hashCode());
 		return result;
 	}
-
 
 	@Override
 	public boolean equals(Object obj) {
@@ -50,20 +46,20 @@ public class RentUnit implements Serializable{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		RentUnit other = (RentUnit) obj;
-		if (units == null) {
-			if (other.units != null)
+		RentJournal other = (RentJournal) obj;
+		if (clients == null) {
+			if (other.clients != null)
 				return false;
-		} else if (!units.equals(other.units))
+		} else if (!clients.equals(other.clients))
 			return false;
 		return true;
 	}
 
-
 	@Override
 	public String toString() {
-		return "RentUnit [units=" + units + "]";
+		return "RentJournal [clients=" + clients + "]";
 	}
+	
 	
 	
 	

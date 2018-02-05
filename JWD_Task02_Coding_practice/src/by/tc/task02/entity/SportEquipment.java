@@ -1,6 +1,10 @@
 package by.tc.task02.entity;
 
-public class SportEquipment {
+import java.io.Serializable;
+
+public class SportEquipment implements Serializable{
+	
+	private static final long serialVersionUID = 1L;
 	private Category category;
 	private String title;
 	private int price;

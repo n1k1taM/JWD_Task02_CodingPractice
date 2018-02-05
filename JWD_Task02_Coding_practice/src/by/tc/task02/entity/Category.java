@@ -1,6 +1,10 @@
 package by.tc.task02.entity;
 
-public enum Category {
+import java.io.Serializable;
+
+public enum Category implements Serializable{
 	ARCHERY,
-	SOFTBALL_EQUIPMENT
+	SOFTBALL_EQUIPMENT,
+	TABLE_TENNIS_EQUIPMENT,
+	VOLLEYBALL_EQUPMENT
 }
